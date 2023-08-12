@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="Dashboard"
+            android:id="@+id/admin_dashboard"
+            android:icon="@drawable/ic_baseline_dashboard_24"
+            ></item>
+    </group>
+        <item android:title="Add Data">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item android:title="Add Notification"
+                    android:id="@+id/admin_noti"
+                    android:icon="@drawable/adnoti">
+                </item>
+                <item android:title="Add Asssignment"
+                    android:id="@+id/admin_assignment"
+                    android:icon="@drawable/ic_baseline_assignment_24">
+                </item>
+                <item android:title=" Add Quiz | Test"
+                    android:id="@+id/admin_test"
+                    android:icon="@drawable/ic_baseline_dvr_24">
+                </item>
+                    <item android:title=" Add Subject"
+                        android:id="@+id/admin_subject"
+                        android:icon="@drawable/ic_baseline_local_library_24">
+                    </item>
+                </group>
+            </menu>
+        </item>
+    <item android:title="Reports">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Student Data"
+                    android:id="@+id/admin_studentmgmt"
+                    android:icon="@drawable/ic_baseline_notifications_24">
+                </item>
+                <item android:title="Test Data"
+                    android:id="@+id/admin_testmgmt"
+                    android:icon="@drawable/ic_baseline_book_24">
+                </item>
+                <item android:title="Assignment"
+                    android:id="@+id/admin_assignmentmgmt"
+                    android:icon="@drawable/ic_baseline_assignment_24">
+                </item>
+                <item android:title="Notification"
+                    android:id="@+id/admin_notimgmt"
+                    android:icon="@drawable/ic_baseline_notifications_24">
+                </item>
+            </group>
+        </menu>
+    </item>
+            <item android:title="Setting">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item android:title="Sign out"
+                    android:id="@+id/admin_logout"
+                    android:icon="@drawable/ic_baseline_exit_to_app_24">
+                </item>
+                </group>
+            </menu>
+        </item>
+</menu>

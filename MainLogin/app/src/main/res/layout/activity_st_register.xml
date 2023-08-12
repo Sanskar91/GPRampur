@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stRegister"
+    android:background="#000000"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="REGISTER HERE"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="30dp"
+        android:textColor="#cccc33"></TextView>
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="8dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/underline"
+        android:layout_gravity="center"
+        ></TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Enter Your Roll No ..."
+                android:textColorHint="#cccc33"
+                app:boxStrokeColor="#cccc33"
+                app:boxStrokeWidth="8dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="#cccc33"
+                app:startIconTint="#cccc33"
+                android:id="@+id/rolln"
+                app:startIconDrawable="@drawable/ic_baseline_looks_one_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/roll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:textColor="#cccc33"
+                    ></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Enter Your Name ..."
+                android:textColorHint="#cccc33"
+                app:boxStrokeColor="#cccc33"
+                app:boxStrokeWidth="8dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="#cccc33"
+                app:startIconTint="#cccc33"
+                android:id="@+id/nme"
+                app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#cccc33"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text=" Select Course :"
+                    android:textColor="#cccc33"
+                    android:id="@+id/cour"
+                    android:textSize="13dp"></TextView>
+
+                <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                    android:id="@+id/stucourse">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:buttonTint="#cccc33"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Diploma"
+                    android:checked="true"
+                    android:textColor="#cccc33"
+                    android:id="@+id/diploma"
+                    android:textSize="11dp"></RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:text=" Select Branch :"
+                android:textColor="#cccc33"
+                android:textSize="13dp"></TextView>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/stubranch">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="C.S.E."
+                    android:buttonTint="#cccc33"
+                    android:id="@+id/cse"
+                    android:textColor="#cccc33"
+                    android:textSize="11dp"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="E.E."
+                    android:textColor="#cccc33"
+                    android:id="@+id/ee"
+                    android:buttonTint="#cccc33"
+                    android:textSize="11dp"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="E.E.(IC)"
+                    android:id="@+id/eeic"
+                    android:buttonTint="#cccc33"
+                    android:textColor="#cccc33"
+                    android:textSize="11dp"></RadioButton>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="I.C."
+                    android:id="@+id/ic"
+                    android:buttonTint="#cccc33"
+                    android:textColor="#cccc33"
+                    android:textSize="11dp"></RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text=" Select Year :"
+                android:textColor="#cccc33"
+                android:textSize="13dp"></TextView>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/stuyear">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="First"
+                    android:id="@+id/first"
+                    android:textColor="#cccc33"
+                    android:buttonTint="#cccc33"
+                    android:textSize="11dp"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/second"
+                    android:layout_marginRight="5dp"
+                    android:text="Second"
+                    android:textColor="#cccc33"
+                    android:buttonTint="#cccc33"
+                    android:textSize="11dp"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/third"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Third"
+                    android:textColor="#cccc33"
+                    android:buttonTint="#cccc33"
+                    android:textSize="11dp"></RadioButton>
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Enter Your Contact ..."
+                android:textColorHint="#cccc33"
+                android:id="@+id/mobno"
+                app:boxStrokeColor="#cccc33"
+                app:boxStrokeWidth="4dp"
+                app:endIconTint="#cccc33"
+                app:endIconMode="clear_text"
+                app:startIconTint="#cccc33"
+                app:startIconDrawable="@drawable/ic_baseline_phone_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:textColor="#cccc33"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Enter Your Email ..."
+                android:textColorHint="#cccc33"
+                app:boxStrokeColor="#cccc33"
+                app:endIconTint="#cccc33"
+                app:startIconTint="#cccc33"
+                android:id="@+id/gmail"
+                app:boxStrokeWidth="4dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#cccc33"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/passw"
+                android:layout_marginRight="20dp"
+                android:hint="Enter Your password ..."
+                android:textColorHint="#cccc33"
+                app:boxStrokeColor="#cccc33"
+                app:boxStrokeWidth="4dp"
+                app:startIconTint="#cccc33"
+                app:endIconTint="#cccc33"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="#cccc33"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Enter Father Name ..."
+                android:id="@+id/fnamee"
+                android:textColorHint="#cccc33"
+                app:boxStrokeColor="#cccc33"
+                app:boxStrokeWidth="4dp"
+                app:endIconMode="clear_text"
+                app:startIconTint="#cccc33"
+                app:endIconTint="#cccc33"
+                app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#cccc33"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/fmobno"
+                android:layout_marginRight="20dp"
+                android:hint="Enter Father Contact ..."
+                android:textColorHint="#cccc33"
+                app:boxStrokeColor="#cccc33"
+                app:boxStrokeWidth="4dp"
+                app:endIconTint="#cccc33"
+                app:startIconTint="#cccc33"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_phone_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="#cccc33"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:text="Register Here"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:padding="3dp"
+                android:id="@+id/btnregister"
+                android:background="@drawable/buttonstyle"></Button>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="14dp"
+                    android:text="Already Registered ?"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/backlog"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Login."
+                    android:layout_centerHorizontal="true"
+                    android:onClick="stLogin"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#b3ffffff"
+                    android:layout_toEndOf="@+id/backlog"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@+id/backlog"></TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

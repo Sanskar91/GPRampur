@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+<item android:title="Dashboard"
+    android:id="@+id/stu_dashboard"
+    android:icon="@drawable/ic_baseline_dashboard_24"
+    android:iconTint="#cccc33"
+    ></item>
+</group>
+
+     <item android:title="From College">
+      <menu>
+          <group android:checkableBehavior="single">
+       <item android:title="Notification"
+           android:id="@+id/stu_notification"
+           android:icon="@drawable/notification">
+       </item>
+          <item android:title="Assignment"
+              android:id="@+id/stu_assignment"
+              android:icon="@drawable/ic_baseline_dvr_24">
+          </item>
+          <item android:title="Test | Quiz"
+              android:id="@+id/stu_test"
+              android:icon="@drawable/ic_baseline_local_library_24">
+          </item>
+          </group>
+      </menu>
+     </item>
+      <item android:title="Setting">
+          <menu>
+              <group android:checkableBehavior="single">
+              <item android:title="My Profile"
+                  android:id="@+id/stu_profile"
+                  android:icon="@drawable/ic_baseline_person_24">
+              </item>
+              <item android:title="Sign out"
+                  android:id="@+id/stu_logout"
+                  android:icon="@drawable/ic_baseline_exit_to_app_24">
+              </item>
+              </group>
+          </menu>
+      </item>
+</menu>

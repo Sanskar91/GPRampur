@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".add_subject"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Subject"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#cccc33"
+        android:textSize="40dp"></TextView>
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="10dp"
+        android:background="@drawable/underline"
+        android:layout_gravity="center"></TextView>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_baseline_book_24"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonstyle"
+        app:tint="#000001"
+        android:padding="10dp"></ImageView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:text=" Select Course :"
+        android:textColor="#cccc33"
+        android:textSize="13dp"></TextView>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stcourse"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:text="Diploma"
+            android:id="@+id/diploma"
+            android:checked="true"
+            android:buttonTint="#cccc33"
+            android:textColor="#cccc33"
+            android:textSize="11dp"
+            ></RadioButton>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text=" Select Branch :"
+        android:textColor="#cccc33"
+        android:textSize="13dp"></TextView>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stubranch"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/branchcse"
+            android:layout_marginRight="10dp"
+            android:text="C.S.E."
+            android:buttonTint="#cccc33"
+            android:checked="true"
+            android:textColor="#cccc33"
+            android:textSize="11dp"></RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/brancheee"
+            android:layout_marginRight="10dp"
+            android:text="E.E."
+            android:textColor="#cccc33"
+            android:buttonTint="#cccc33"
+            android:textSize="11dp"></RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="E.E.(I.C.)"
+            android:buttonTint="#cccc33"
+            android:id="@+id/brancheeice"
+            android:textColor="#cccc33"
+            android:textSize="11dp"></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#cccc33"
+            android:layout_marginRight="10dp"
+            android:text="I.C."
+            android:id="@+id/branchice"
+            android:textColor="#cccc33"
+            android:textSize="11dp"></RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text=" Select Year  :"
+        android:textColor="#cccc33"
+        android:textSize="13dp"></TextView>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stuyear"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/yearfirst"
+            android:text="First.."
+            android:buttonTint="#cccc33"
+            android:checked="true"
+            android:textColor="#cccc33"
+            android:textSize="11dp"></RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/yearsecond"
+            android:layout_marginRight="5dp"
+            android:text="Second."
+            android:textColor="#cccc33"
+            android:buttonTint="#cccc33"
+            android:textSize="11dp"></RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/yearthree"
+            android:layout_marginRight="5dp"
+            android:text="Third."
+            android:textColor="#cccc33"
+            android:buttonTint="#cccc33"
+            android:textSize="11dp"></RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text=" Select Set :"
+        android:textColor="#cccc33"
+        android:textSize="13dp"></TextView>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/set"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/a"
+            android:checked="true"
+            android:buttonTint="#cccc33"
+            android:layout_marginRight="10dp"
+            android:text="A"
+            android:textColor="#cccc33"
+            android:textSize="11dp"></RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/b"
+            android:layout_marginRight="10dp"
+            android:text="B"
+            android:textColor="#cccc33"
+            android:buttonTint="#cccc33"
+            android:textSize="11dp"></RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="C"
+            android:id="@+id/c"
+            android:buttonTint="#cccc33"
+            android:textColor="#cccc33"
+            android:textSize="11dp"></RadioButton>
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Subject "
+        android:textColorHint="#cccc33"
+        android:id="@+id/notisubject"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:boxStrokeColor="#cccc33"
+        app:boxStrokeWidth="2dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#cccc33"
+            android:inputType="text"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add Subject"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/subjectbt"
+        android:layout_marginRight="30dp"
+        android:textColor="#000001"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonstyle"></Button>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

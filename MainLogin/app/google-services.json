@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "724027296827",
+    "firebase_url": "https://mainlogin-e6358.firebaseio.com",
+    "project_id": "mainlogin-e6358",
+    "storage_bucket": "mainlogin-e6358.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724027296827:android:7bb123f52333c63498601e",
+        "android_client_info": {
+          "package_name": "com.example.mainlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724027296827-fr89ub6l288pvfaflf5124alucf7gtjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8i3i37AZENq1deK_HGzgKdidygRgAELo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724027296827-fr89ub6l288pvfaflf5124alucf7gtjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/addesign"
+    android:layout_margin="10dp"
+    android:padding="4dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#00000000">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/adback">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For : CS -3rd Year"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#ffa500"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-black"
+                android:id="@+id/assignsub"
+                android:text="Information Related To the Exam  "
+                android:layout_marginTop="10dp"
+                android:textSize="14dp"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/assigndesc"
+                android:textColor="#cccc33"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:text="All student Please Listen Carefully Today your Java Programming Online Test. "
+                android:textSize="14dp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note :"
+                android:textColor="#ffa500"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="14dp"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/assignremark"
+                    android:text="Your Exam Wiil Be 10:00 Am Morning"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14dp"></TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="22 August 2020"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:textSize="14dp"></TextView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

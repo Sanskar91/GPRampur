@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mainlogin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logohead"
+        android:label="GP RAMPUR"
+        android:logo="@drawable/logohead"
+        android:resizeableActivity="true"
+        android:roundIcon="@drawable/logohead"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Imageslider"></activity>
+        <activity android:name=".Stdeveloper" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".add_subject" />
+        <activity android:name=".studentprofile" />
+        <activity android:name=".admin_notification" />
+        <activity android:name=".student_notification" />
+        <activity android:name=".st_dashboard" />
+        <activity android:name=".login" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".stRegister" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".student_assignment" />
+        <activity android:name=".admin_assignment" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
